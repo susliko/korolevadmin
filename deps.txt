@@ -1,0 +1,3 @@
+ bazel query --noimplicit_deps 'deps(//:app_lib)' --output graph | sed '/@/d' | sed '/scala:/d' > graph.txt
+
+dot -Tpng < graph.txt > graph.png

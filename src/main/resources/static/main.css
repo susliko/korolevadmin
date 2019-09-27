@@ -1,0 +1,126 @@
+:root {
+    --color1: #616871/*#f5f5f6*/;
+    --color2: #ffffff;
+    --color3: #e6e6e6;
+    --color4: #eff4f8;
+    --color5: #ffdd2d;
+    --color6: #333333;
+    --color7: #3583e7;
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, Roboto, Arial, sans-serif;
+    background-color: var(--color2);
+    color: var(--color6);
+}
+input, button, textarea, code, select {
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    font-size: medium;
+    border: none;
+    color: var(--color6);
+}
+input, textarea, select {
+    background-color: var(--color4);
+    border: solid 1px var(--color4);
+}
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border: solid 1px black;
+    background-color: var(--color2);
+}
+button {
+    cursor: pointer;
+}
+.accent-button {
+    background-color: var(--color5);
+}
+.normal-button {
+    background-color: var(--color3);
+}
+pre {
+    margin: 0;
+    padding: 0;
+}
+code {
+    display: block;
+    background-color: var(--color4);
+    cursor: text;
+    max-height: 60vh;
+    overflow: auto;
+}
+header {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    background-color: var(--color1);
+    color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,0.3);
+}
+main {
+    width: 100%;
+    padding: 1em calc(50% - 550px);
+}
+details {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+    border: 1px solid var(--color3);
+    border-radius: 0.3em;
+    overflow: hidden;
+    cursor: pointer;
+}
+details:focus, summary:focus {
+    outline: none;
+}
+summary {
+    font-size: large;
+    padding: 0.5em 1em;
+    background-color: var(--color3);
+    font-weight: bold;
+}
+.details-content {
+    padding: 0.5em 1em;
+}
+details form {
+    padding: 1em;
+}
+form section {
+    margin-bottom: 1em;
+}
+
+.submit-section {
+    display: flex;
+    align-items: center;
+}
+
+.form-block {
+    padding: 1em 1em 0 1em;
+    border: solid 1px var(--color3);
+    border-radius: 0.3em;
+    width: max-content;
+    max-width: 100%;
+}
+.loginContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color7);
+}
+.loginForm {
+    padding: 2em 3em;
+    border-radius: 0.5em;
+    background-color: var(--color2);
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,0.3);
+}
